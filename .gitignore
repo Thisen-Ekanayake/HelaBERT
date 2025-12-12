@@ -1,5 +1,7 @@
+__pycache__/
 tokenizer/
 
 *.txt
 *.jsonl
 *json
+*.parquet
