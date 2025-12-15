@@ -11,3 +11,4 @@ tokenizer/
 *.pth
 
 !requirements.txt
+!bert_config.json
