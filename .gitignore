@@ -6,5 +6,8 @@ tokenizer/
 *json
 *.parquet
 *.pt
+*.safetensors
+*.bin
+*.pth
 
 !requirements.txt
