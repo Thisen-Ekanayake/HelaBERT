@@ -5,6 +5,7 @@ bert_final_model/
 data/
 text_shards/
 tokenized_chunks/
+wandb/
 
 *.txt
 *.jsonl
