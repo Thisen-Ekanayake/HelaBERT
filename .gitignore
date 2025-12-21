@@ -15,6 +15,7 @@ wandb/
 *.safetensors
 *.bin
 *.pth
+*csv
 
 !requirements.txt
 !bert_config.json
