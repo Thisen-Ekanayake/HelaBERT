@@ -36,5 +36,5 @@ def clean_spaces_in_file(filepath: str):
 # === MAIN EXECUTION ===
 # Replace with your actual dataset file
 if __name__ == "__main__":
-    file_path = "/mnt/ml/SinBERT/output copy.txt"
+    file_path = "/mnt/ml/HelaBERT/output copy.txt"
     clean_spaces_in_file(file_path)

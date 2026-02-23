@@ -6,7 +6,7 @@ import concurrent.futures
 # === CONFIGURATION ===
 
 # Path to your input dataset (should be a plain .txt file with one sentence or paragraph per line)
-INPUT_FILE = "/mnt/ml/SinBERT/output copy.txt"
+INPUT_FILE = "/mnt/ml/HelaBERT/output copy.txt"
 
 # Output file for the normalized text
 # IMPORTANT: Keep the ".normalized.txt" suffix to indicate the file is processed

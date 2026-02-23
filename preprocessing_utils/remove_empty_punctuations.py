@@ -46,5 +46,5 @@ def clean_file(filepath: str):
 # === MAIN ENTRY POINT ===
 # Replace with your actual file path
 if __name__ == "__main__":
-    file_path = "/mnt/ml/SinBERT/output copy.txt"
+    file_path = "/mnt/ml/HelaBERT/output copy.txt"
     clean_file(file_path)

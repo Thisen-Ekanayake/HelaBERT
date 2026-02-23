@@ -44,6 +44,6 @@ def clean_file_in_place(filepath: str):
 # === MAIN EXECUTION ===
 # Replace with your actual file path
 if __name__ == "__main__":
-    file_path = "/mnt/ml/SinBERT/output copy.txt"
+    file_path = "/mnt/ml/HelaBERT/output copy.txt"
     clean_file_in_place(file_path)
     print(f"Cleaned: {file_path}")

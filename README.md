@@ -1,6 +1,6 @@
-# SinBERT: A Sinhala BERT-Style Masked Language Model
+# HelaBERT: A Sinhala BERT-Style Masked Language Model
 
-SinBERT is a **Sinhala-focused BERT-style masked language model** trained from scratch on a large, cleaned Sinhala text corpus.  
+HelaBERT is a **Sinhala-focused BERT-style masked language model** trained from scratch on a large, cleaned Sinhala text corpus.  
 The repository contains:
 
 - **Preprocessing utilities** tailored for Sinhala text
@@ -92,7 +92,7 @@ The notebook is written in an exploratory style; you can adapt the cell paramete
 
 ---
 
-### 4. Train SinBERT (Notebook)
+### 4. Train HelaBERT (Notebook)
 
 - **Model configuration** is defined in `bert_config.json`:
   - `model_type`: `bert`
@@ -136,7 +136,7 @@ ids = sp.encode(text, out_type=int)
 From here you can:
 
 - Run **masked language modeling** experiments.
-- Fine-tune SinBERT for downstream Sinhala NLP tasks (classification, NER, etc.) using standard HF workflows.
+- Fine-tune HelaBERT for downstream Sinhala NLP tasks (classification, NER, etc.) using standard HF workflows.
 
 ---
 
@@ -167,4 +167,4 @@ All datasets were preprocessed and normalized prior to training.
 
 ## Citation / Attribution
 
-If you use or build upon SinBERT in academic or industrial work, please cite this repository or acknowledge it in your paper, report, or documentation.
+If you use or build upon HelaBERT in academic or industrial work, please cite this repository or acknowledge it in your paper, report, or documentation.

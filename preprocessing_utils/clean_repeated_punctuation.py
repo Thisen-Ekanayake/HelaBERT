@@ -42,4 +42,4 @@ def clean_repeated_punctuation(file_path: str):
 # === MAIN EXECUTION ===
 # Replace with your actual file path
 if __name__ == "__main__":
-    clean_repeated_punctuation("/mnt/ml/SinBERT/output copy.txt")
+    clean_repeated_punctuation("/mnt/ml/HelaBERT/output copy.txt")
