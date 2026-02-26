@@ -65,6 +65,7 @@ sp = spm.SentencePieceProcessor()
 sp.load("tokenizer/unigram_32000_0.9995.model")
 
 ids = sp.encode("ශ්‍රී ලංකාවේ අගනුවර කොළඹ වේ", out_type=int)
+print(ids)
 ```
 
 ---
@@ -138,7 +139,7 @@ sp.load("tokenizer/unigram_32000_0.9995.model")
 model = BertForMaskedLM.from_pretrained("HelaBERT")
 model.eval()
 
-sentence = "ශ්‍රී ලංකාවේ අගනුවර කොළඹ වේ"
+sentence = "ශ්‍රී ලංකාවේ [MASK] අගනුවර කොළඹ වේ"
 mask_id = sp.piece_to_id("[MASK]")
 
 parts = sentence.split("[MASK]")
@@ -151,6 +152,7 @@ with torch.no_grad():
 mask_index = (input_ids == mask_id).nonzero(as_tuple=True)[1]
 top5 = torch.topk(logits[0, mask_index], 5, dim=-1)
 
+print("Top 5 predictions for [MASK]:")
 for token_id in top5.indices[0]:
     print(sp.id_to_piece(token_id.item()))
 ```
@@ -165,7 +167,7 @@ import torch
 sp = spm.SentencePieceProcessor()
 sp.load("tokenizer/unigram_32000_0.9995.model")
 
-model = BertModel.from_pretrained("HelaBERT", add_pooling_layer=False)
+model = BertModel.from_pretrained("HelaBERT", add_pooling_layer=False, ignore_mismatched_sizes=True)
 model.eval()
 
 def embed(text):
